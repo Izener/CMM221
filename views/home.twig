@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--lang="en" คือการกำหนดภาษาหลักให้กับเว็บ-->
+<head>
+  <meta charset="UTF-8">
+  <!--utf-8 = save char เซฟให้เป็นภาษาไทย-->
+  <title>CMM 19</title>
+  <link rel="stylesheet"
+  href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  <!--link rel เป็นคำสั่งโหลด css เข้ามา -->
+  <!--แนะนำให้ใช้ bulma ใช้ง่าย มีแค่ css-->
+  <!--command promt ช่วย connectwith server-->
+  <!--<style type ="text/css">
+    .navbar-item {
+
+    }
+  </style> //ถ้าไม่ใช้ class ให้ใส่ style type ด้วย-->
+  <link rel="stylesheet" href="/assets/home.css">
+</head>
+<body>
+  <header> <!--ส่วนหัวของหน้า-->
+    <div class="has-text-centered">
+      <!--เอา flamework มาจาก bulma -->
+      <img src="/assets/images/logo.png" alt="" width="145" height="auto">
+    </div>
+    <!--div = ใช้แทน class ในส่วนของ image เพราะ image ใช้ src เลยใช้ class ไม่ได้-->
+  <!--<h1 class="has-text-centered">สวัสดีจ้า</h1>-->
+  <nav class="navbar-tabs">
+    <a href="#" class="navbar-item">work</a>
+    <a href="#" class="navbar-item">Interview</a>
+    <a href="#" class="navbar-item">Welcome</a>
+    <a href="#" class="navbar-item">work</a>
+    <a href="#" class="navbar-item">work</a>
+    <a href="#" class="navbar-item">work</a>
+    <a href="#" class="navbar-item">work</a>
+    <a href="#" class="navbar-item">work</a>
+  </nav>
+  <!-- ใช้ header ในหน้า home ช่วยจัดหน้้า-->
+  <!--ใช้ทำในส่วนของ menu bar(nevigation bar) -->
+  <!--work ใส่เป็นเมนู -->
+  <!-- a hret="#" ตัว # คือ ลิ้งค์เมนู//การใส่ # ทำให้กดแล้วไม่ลิ้งค์ (ตัวอย่าง) -->
+  <!-- class จะช่วยให้ select ให้ง่ายขึ้น // . = attribute ของ class ก็เลยใช้ class ไปเลย -->
+  </header>
+  <main>
+    <section class="banner"> <!--ส่วนของ banner-->
+      <div class="highlight">
+        <div class="columns">
+          <!--columns = all column-->
+          <div class="column highlight-item">
+          <!--มันคำนวณกริดให้ หารจาก 12 แต่ถ้าอยากกำหนดเองต้องใส่ไซส์ แต่รวมให้ได้ 12 คอลัม-->
+          <!--column เป็นตัวบอกว่ามีกริด-->
+          <!--<img src="/assets/images/home/banner/highlight.jpg" alt="" width="100%" height="auto">-->
+          <h1>Hellooooooooooooo</h1> <!--สำคัญสุด มีได้แค่ 1 ตัวใน 1 หน้า-->
+        </div>
+        </div>
+      </div>
+      <!-- แบนเนอร์ส่วนบน-->
+      <div class="thumbnail">
+      <!-- แบนเนอร์ส่วนล่าง-->
+      <!-- ถ้ามีหลายอันต้องเปิด div ใหม่ -->
+        <div class="columns is-marginless has-text-centered">
+          <div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-1.jpg);">
+          It so harddddd
+          </div>
+          <div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-2.jpg);">
+          always angryyy
+          </div>
+          <div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-3.jpg);">
+          boringggggggg
+          </div>
+          <div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-4.jpg);">
+          codding errorr
+          </div>
+          <div class="column thumbnail-item is-paddingless" style="background-image: url(/assets/images/home/banner/thumbnail-5.jpg);">
+          human errorrr
+          </div>
+        <!-- is-paddingless ทำให้ช่องว่าง(ขาวๆ) หายไป-->
+        </div>
+      </div>
+    </section>
+
+    <section class="section we-present">
+      <div class="container">
+        <div class="columns">
+          <div class="column has-text-left">
+            <a href="#">LASTET</a>
+          </div>
+          <div class="column has-text-centered">
+            <a href="#">WE PRESENT</a>
+          </div>
+          <div class="column has-text-right">
+            <a href="#">SEARCH</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-multiline"> <!--ทำให้ขึ้นบรรทัดใหม่ถ้าคอลัมเต็ม-->
+
+      <a href="#" class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by2">
+              <img src="assets/images/home/we-preset/img-1.jpg" alt="image-1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h5 class="catagory">Public Space</h5>
+            <h3 class="title is-spaced is-4">lorem ipsum dolor sit amet, con......</h3>
+            <h4 class="sumtitle is-6">Story of ......</h4>
+            <p>
+              Earum .............
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by2">
+              <img src="assets/images/home/we-preset/img-2.jpg" alt="image-2">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h5 class="catagory">Olalalalaaaa</h5>
+            <h3 class="title is-spaced is-4">helloooooooo</h3>
+            <h4 class="sumtitle is-6">Story of ......</h4>
+            <p>
+              lalabell .............
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by2">
+              <img src="assets/images/home/we-preset/img-3.jpg" alt="image-3">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h5 class="category">Public Space</h5>
+            <h3 class="title is-spaced is-4">diamond olallaaa</h3>
+            <h4 class="subtitle is-6">Story of ......</h4>
+            <p>
+              diamond .............
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by2">
+              <img src="assets/images/home/we-preset/img-4.jpg" alt="image-4">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h5 class="catagory">Public Space</h5>
+            <h3 class="title is-spaced is-4">lorem ipsum dolor sit amet, con......</h3>
+            <h4 class="sumtitle is-6">Story of ......</h4>
+            <p>
+              Earum .............
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by2">
+              <img src="assets/images/home/we-preset/img-5.jpg" alt="image-5">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h5 class="catagory">Public Space</h5>
+            <h3 class="title is-spaced is-4">lorem ipsum dolor sit amet, con......</h3>
+            <h4 class="sumtitle is-6">Story of ......</h4>
+            <p>
+              Earum .............
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-3by2">
+              <img src="assets/images/home/we-preset/img-6.jpg" alt="image-6">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h5 class="catagory">Public Space</h5>
+            <h3 class="title is-spaced is-4">lorem ipsum dolor sit amet, con......</h3>
+            <h4 class="sumtitle is-6">Story of ......</h4>
+            <p>
+              Earum .............
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    </section>
+
+  </main>
+</body>
+</html>
+
+<!--menu bar in html we call nevigation bar-->

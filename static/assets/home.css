@@ -1,0 +1,64 @@
+header .navbar-tabs {
+  justify-content: center;
+}
+
+.highlight {
+  margin-bottom: 0 !important;  /*impotantทำให้มันสำคัญมากที่สุด ถ้าไม่ใส่จะ overlight
+  //จะทำให้ browser มอง magin สำคัญกว่า select ที่เลือก (ถ้าไม่ใส่มันจะเว้นวรรค)*/
+}
+/*หน่วยปกติเป็น px แต่พอใช้เรื่อยๆ จะเจอปัญหาในเว็บกับในมือถือ มันจะดูเล็กใหญ่ไม่เท่ากัน(ตามสัดส่วนคอมและมือถือ)
+default บน browser = 16 px >>> 1.5 rem = 30 px// rem = ระยะห่าง
+ในเว็บ responsive จะใช้ "rem" มันจะ support กับอุปกรณ์หลายๆ แบบได้ดีกว่า*/
+
+.highlight .highlight-item {
+  height: 416px;
+  background: url(/assets/images/home/banner/highlight.jpg) no-repeat center/cover;
+  color: #33ffcc;
+  display: flex; /*เปลี่ยนรูปแบบการแสดงผล*/
+  justify-content: center; /*ใช้คู่ดิสเพลย์ ทำให้คอนเทนท์ทุกอย่างมาอยู่ตรงกลาง*/
+  align-items: center; /*ทำให้คอนเทนท์อยู่ในแนวตั้ง*/
+}
+
+.highlight .highlight-item h1 {
+  font-size: 100px;
+}
+
+/*.highlight .highlight-item,
+.thumbnail .thumbnail-item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//text center + colour
+*/
+
+.thumbnail {
+  border-top: 0.1rem solid #ffffff;
+}
+
+/*.thumbnail .thumbnail-item {
+  border-right: 0.1rem solid red;
+}
+
+.thumbnail .thumbnail-item:last-child {
+  border: none;
+}*/
+
+.thumbnail .thumbnail-item + .thumbnail-item {
+  border-left: 0.1rem solid #ffffff;
+}
+
+.thumbnail .thumbnail-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #E6E6FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
